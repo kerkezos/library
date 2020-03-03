@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>insert form</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+<p align="middle">INSERT FORM</p>
+<form align="middle" action="/Library/insert.php" method="post" >
+  <label for="bookname">Book</label><br>
+  <input type="text" id="bookname" name="bookname"><br>
+  <label for="author">Author</label><br>
+  <input type="text" id="author" name="author"><br><br>
+   <label>Tags</label><br>
+    <input type="checkbox" value="fantasy" name="choice[]">
+  <label> Fantasy </label><br>
+  <input type="checkbox" value="romance"  name="choice[]">
+  <label> Romance </label><br>
+  <input type="checkbox" value="horror"  name="choice[]">
+  <label> Horror </label><br>
+    <input type="checkbox" value="sciencefiction"  name="choice[]">
+  <label> Science Fiction </label><br>
+  <input type="submit" value="INSERT">
+</form>
+<br>
+<br>
+<form align="middle" action="/Library/show_books.php" >
+<input  type="submit" value="SHOW BOOKS">
+</form>
+
+<form align="middle" action="/Library/show_authors.php" >
+<input  type="submit" value="SHOW AUTHORS">
+</form>
+
+</div>
+</body>
+</html>
